@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Schedule and Seats Availability</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+</head>
+<body>
+
+<!-- Login Page -->
+<div id="login-page" class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <form id="login-form" class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center">Login</h3>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" class="form-control" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" class="form-control" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Train Schedule and Seats Availability Page -->
+<div id="schedule-page" class="container mt-5 d-none">
+  <h2 class="text-center mb-4">Train Schedule</h2>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Train Number</th>
+        <th>Train Name</th>
+        <th>Departure Time</th>
+        <th>Seats Available</th>
+      </tr>
+    </thead>
+    <tbody id="schedule-table-body">
+      
+    </tbody>
+  </table>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
